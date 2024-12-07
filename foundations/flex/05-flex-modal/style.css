@@ -20,9 +20,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-}
 
-.icon {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+.modal .icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,6 +36,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Another way to do the exercise  */
+/* .modal .icon {
+  flex-shrink: 0;
+} */
+
+.modal .modal-content {
+  flex: 1;
+  position: relative;
+}
+.modal-content .header,
+.modal-content .text {
+  margin-bottom: 10px;
+}
+.modal .modal-content .header {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .close-button {
@@ -48,6 +68,13 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+/* Another way to do exercise  */
+.close-button {
+  position: absolute;
+  top:0;
+  right: 0;
 }
 
 button {
